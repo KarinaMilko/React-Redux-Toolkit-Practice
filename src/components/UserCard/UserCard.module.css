@@ -1,0 +1,34 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerCard {
+  border: 2px solid pink;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+  position: relative;
+}
+.userName {
+  font-weight: bold;
+}
+.inActiveBtnCard {
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  left: 80%;
+}
+.btnCard {
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  left: 80%;
+}
+.isFavouritBtn {
+  color: red;
+}
