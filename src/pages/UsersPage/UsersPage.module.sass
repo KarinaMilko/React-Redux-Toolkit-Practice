@@ -1,0 +1,35 @@
+.userContainer
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+    gap: 30px
+    @media screen and (max-width: 1000px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.userItem
+    width: 400px
+    height: 150px
+    padding: 3rem
+    background-color: pink
+    border-radius: 0.5rem
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 3rem
+.userPhoto
+    width: 120px
+    height: 120px
+    border-radius: 5%
+    object-fit: cover
+    object-position: center
+.usersData
+    display: flex
+    flex-direction: column
+    gap: 1rem
+.userName
+    font-size: 1.5rem
+    font-weight: bold
