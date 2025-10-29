@@ -5,7 +5,7 @@ function TodoListItem({ todo: { id, newTodo }, remove, toggle }) {
   return (
     <li className={styles.todoItem}>
       <input type="checkbox" onChange={() => toggle(id)} />
-      <p>{newTodo}</p>
+      <p className={styles.todoItemText}>{newTodo}</p>
       <button className={styles.btnRemove} onClick={() => remove(id)}>
         <FaRegTrashCan />
       </button>

@@ -20,22 +20,22 @@ function TodoForm({ create }) {
         validationSchema={TODO_VALIDATION_SCHEMA}
       >
         <Form>
-          <label className={styles.inputForm}>
-            <span className={styles.nameForm}>New Todo:</span>
-            <Field
-              type="text"
-              name="newTodo"
-              autoFocus
-              className={styles.input}
-            />
-            <button type="submit" className={styles.btnAdd}>
-              Add
-            </button>
-            <ErrorMessage
-              name="newTodo"
-              component="div"
-              className={styles.errMsg}
-            />
+          <label>
+            <div className={styles.inputForm}>
+              <span>New Todo:</span>
+              <Field
+                type="text"
+                name="newTodo"
+                autoFocus
+                className={styles.input}
+              />
+              <button type="submit" className={styles.btnAdd}>
+                Add
+              </button>
+            </div>
+            <div className={styles.errMsg}>
+              <ErrorMessage name="newTodo" component="div" />
+            </div>
           </label>
         </Form>
       </Formik>

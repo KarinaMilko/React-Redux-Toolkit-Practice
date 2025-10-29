@@ -1,39 +1,35 @@
 .containerForm
+    box-sizing: border-box
     display: flex
     flex-direction: column
     gap: 10px
-    justify-content: center
-    margin: 5px
     padding: 10px
     border: 2px solid grey
-    height: 120px
-    position: relative
-.nameForm
-    position: absolute
-    top: 10px
 
 .inputForm
     display: flex
-    flex-direction: column
-    justify-content: center
+    align-items: center
+    flex-wrap: wrap
     gap: 10px
 
 .input
-    flex: 1 1 2rem
+    box-sizing: border-box
+    flex: 1 1 200px
     width: 80%
     height: 2rem
-    position: absolute
+    padding: 5px
 
 .btnAdd
     background-color: #ff33ae
     color: white
     font-weight: bold
     border: none
+    flex: 0 1 auto
     padding: 10px 20px
-    position: absolute
-    right: 10px
+    min-width: 80px
 
 .errMsg
     color: red
-    position: absolute
-    bottom: 10px
+    min-height: 1.6rem
+    margin-top: 5px
+    font-size: 0.9rem
