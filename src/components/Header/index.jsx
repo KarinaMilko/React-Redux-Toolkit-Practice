@@ -14,6 +14,11 @@ function Header() {
           </NavLink>
         </li>
         <li>
+          <NavLink className={activeLink} to="/user">
+            User Card
+          </NavLink>
+        </li>
+        <li>
           <NavLink className={activeLink} to="/form">
             Form
           </NavLink>
